@@ -38,7 +38,7 @@ public class PanModalPresentationController: UIPresentationController {
     struct Constants {
         static let indicatorYOffset = CGFloat(8.0)
         static let snapMovementSensitivity = CGFloat(0.7)
-        static let dragIndicatorSize = CGSize(width: 36.0, height: 5.0)
+        static let dragIndicatorSize = CGSize(width: 70.0, height: 6.0)
     }
 
     // MARK: - Properties
@@ -131,8 +131,10 @@ public class PanModalPresentationController: UIPresentationController {
      */
     private lazy var dragIndicatorView: UIView = {
         let view = UIView()
-        view.backgroundColor = .lightGray
-        view.layer.cornerRadius = Constants.dragIndicatorSize.height / 2.0
+        view.backgroundColor = .white
+        view.layer.borderWidth = 1
+        view.layer.borderColor = UIColor.lightGray.cgColor
+        view.layer.cornerRadius = 3
         return view
     }()
 
