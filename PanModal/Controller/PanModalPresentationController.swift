@@ -133,8 +133,11 @@ public class PanModalPresentationController: UIPresentationController {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.borderWidth = 1
-        view.layer.borderColor = UIColor.lightGray.cgColor
+        view.layer.borderColor = UIColor(red: 225, green: 225, blue: 225, alpha: 1).cgColor
         view.layer.cornerRadius = 3
+        view.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.16).cgColor
+        view.layer.shadowOffset = CGSize(width: 0, height: 3)
+        view.layer.shadowRadius = 3
         return view
     }()
 
