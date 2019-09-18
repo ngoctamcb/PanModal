@@ -138,6 +138,8 @@ public class PanModalPresentationController: UIPresentationController {
         view.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.16).cgColor
         view.layer.shadowOffset = CGSize(width: 0, height: 3)
         view.layer.shadowRadius = 3
+        view.layer.masksToBounds = false
+        view.layer.shadowOpacity = 0.5
         return view
     }()
 
