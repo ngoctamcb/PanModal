@@ -25,7 +25,11 @@ extension BasicViewController: PanModalPresentable {
     var panScrollable: UIScrollView? {
         return nil
     }
-
+    
+    var backgroundAlpha: CGFloat {
+        return 0.4
+    }
+    
     var longFormHeight: PanModalHeight {
         return .maxHeightWithTopInset(200)
     }

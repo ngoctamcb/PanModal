@@ -31,14 +31,14 @@ public class DimmedView: UIView {
         didSet {
             switch dimState {
             case .max:
-//                alpha = dimAlpha
-                alpha = 0.0
+                alpha = dimAlpha
+                //alpha = 0.0
             case .off:
                 alpha = 0.0
             case .percent(let percentage):
-//                let val = max(0.0, min(1.0, percentage))
-//                alpha = dimAlpha * val
-                alpha = 0.0
+                let val = max(0.0, min(1.0, percentage))
+                alpha = dimAlpha * val
+//                alpha = 0.0
             }
         }
     }

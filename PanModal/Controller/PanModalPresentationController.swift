@@ -139,6 +139,7 @@ public class PanModalPresentationController: UIPresentationController {
         view.layer.shadowOffset = CGSize(width: 0, height: 3)
         view.layer.shadowRadius = 3
         view.layer.masksToBounds = false
+        view.clipsToBounds = false
         view.layer.shadowOpacity = 0.5
         return view
     }()
